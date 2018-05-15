@@ -84,7 +84,7 @@ Since the objects begin and end at the same location, they have the same displac
 A young boy whirls a ball, attached to a string, above his head in a counter-clockwise circle. The ball follows a circular path and makes 2 revolutions per second. The string has length 2ft.
 \begin{enumerate}
 	\item Find the position function $\vec r(t)$ that describes this situation.
-	\item	Find the acceleration of the ball and derive a physical interpretation of it.
+	\item	Find the acceleration of the ball and give a physical interpretation of it.
 	\item	A tree stands 10ft in front of the boy. At what $t$-values should the boy release the string so that the ball hits the tree?
 \end{enumerate}
 }
@@ -92,7 +92,7 @@ A young boy whirls a ball, attached to a string, above his head in a counter-clo
 	\item The ball whirls in a  circle. Since the string is 2ft long, the radius of the circle is 2. The position function $\vrt = \la 2\cos t, 2\sin t\ra$ describes a circle with radius 2, centered at the origin, but makes a full revolution every $2\pi$ seconds, not two revolutions per second. We modify the period of the trigonometric functions to be 1/2 by multiplying $t$ by $4\pi$. The final position function is thus $$\vrt = \la 2\cos (4\pi t), 2\sin (4\pi t)\ra.$$
 	(Plot this for $0\leq t\leq 1/2$ to verify that one revolution is made in 1/2 a second.)
 	
-	\item		To find $\vat$, we derive $\vrt$ twice.
+	\item		To find $\vat$, we take the derivative of $\vrt$ twice.
 	\begin{align*}
 	\vvt = \vrp(t) &= \la -8\pi \sin (4\pi t), 8\pi \cos (4\pi t)\ra\\
 	\vat =\vrp'(t) &= \la -32\pi^2 \cos (4\pi t), -32\pi^2 \sin (4\pi t) \ra \\
@@ -157,7 +157,7 @@ An important application of vector--valued position functions is \emph{projectil
 Suppose an object has initial position $\vec r(0) = \la x_0,y_0\ra$ and initial velocity $\vec v(0) = \la v_x,v_y\ra$. It is customary to rewrite $\vec v(0)$ in terms of its speed $v_0$ and direction $\vec u$, where $\vec u$ is a unit vector. Recall all unit vectors in $\mathbb{R}^2$ can be written as $\la \cos \theta,\sin \theta\ra$, where $\theta$ is an angle measure counter--clockwise from the $x$-axis. (We refer to $\theta$ as the \textbf{angle of elevation.}\index{angle of elevation}) Thus $\vec v(0) = v_0\la \cos \theta,\sin \theta\ra.$ 
 
 Since the acceleration of the object is known, namely $\vat = \la 0,-g\ra$, where $g$ is the gravitational constant, we can find $\vrt$ knowing our two initial conditions. We first find $\vvt$:
-\mnote{.5}{\textbf{Note:} This text uses $g=32$ft/s$^2$ when using Imperial units, and $g=9.8$m/s$^2$ when using SI units.}
+\mnote{.45}{\textbf{Note:} This text uses $g=32$ft/s$^2$ when using Imperial units, and $g=9.8$m/s$^2$ when using SI units.}
 \begin{align*}
 \vec v(t) &= \int \vat \ dt\\
 \vvt &= \int \la 0,-g\ra \ dt\\
@@ -316,7 +316,7 @@ $$\frac{\text{displacement}}{\text{travel time}} = \frac1{b-a}\int_a^b \vec{r}\,
 that is, it is the average value of $\vec r\,'(t)$, or $\vvt$, on $[a,b]$.\\
 
 \keyidea{idea:average_speed_velocity}{Average Speed, Average Velocity}
-{Let $\vec r(t)$ be a continuous position function on an open interval $I$ containing $a<b$. \\
+{Let $\vec r(t)$ be a differentiable position function on $[a,b]$. \\
 
 The \sword{average speed} is:
 $$\frac{\text{distance traveled}}{\text{travel time}} = \frac{\int_a^b \norm{\vvt}\ dt}{b-a} = \frac1{b-a}\int_a^b\norm{\vvt}\ dt.$$

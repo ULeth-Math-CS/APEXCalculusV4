@@ -29,6 +29,9 @@ As long as the coordinate axes are positioned so that they follow this rule, it 
 In Figure \ref{fig:cartcoord1} we see the point $P=(2,1,3)$ plotted on a set of axes. The basic convention here is that the $x$-$y$ plane is drawn in its standard way, with the $z$-axis down to the left. The perspective  is that the paper represents the $x$-$y$ plane and the positive $z$ axis is coming up, off the page. This method is preferred by many engineers. Because it can be hard to tell where a single point lies in relation to all the axes, dashed lines have been added to let one see how far along each axis the point lies.
 
 One can also consider the $x$-$y$ plane as being a horizontal plane in, say, a room, where the positive $z$-axis is pointing up. When one steps back and looks at this room, one might draw the axes as shown in Figure \ref{fig:cartcoord2}. The same point $P$ is drawn, again with dashed lines. This point of view is preferred by most mathematicians, and is the convention adopted by this text.
+
+Just as the $x$- and $y$-axes divide the plane into four \emph{quadrants}, the $x$-, $y$-, and $z$-coordinate planes divide space into eight \emph{octants}.  The octant in which $x$, $y$, and $z$ are positive is called the \sword{first octant}.  We do not name the other seven octants in this text.\index{octant!first}\index{first octant}
+\enlargethispage{2\baselineskip}
 \mfigurethree{width=150pt,3Dmenu,activate=onclick,deactivate=onclick,
 3Droll=0,
 3Dortho=0.004,
@@ -79,6 +82,7 @@ $$||\overline{PQ}|| = \sqrt{(2-1)^2+(1-4)^2+(1-(-1))^2} = \sqrt{14}\approx 3.74.
 \noindent\textbf{\large Spheres}\\
 
 \index{sphere}Just as a circle is the set of all points in the \textit{plane} equidistant from a given point (its center), a sphere is the set of all points in \textit{space} that are equidistant from a given point. Definition \ref{def:space_distance} allows us to write an equation of the sphere.
+\enlargethispage{2\baselineskip}
 
 We start with a point $C = (a,b,c)$ which is to be the center of a sphere with radius $r$. If a point $P=(x,y,z)$ lies on the sphere, then $P$ is $r$ units from $C$; that is, 
 $$||\overline{PC}|| = \sqrt{(x-a)^2+(y-b)^2+(z-c)^2} = r.$$
@@ -105,6 +109,7 @@ The equation of a sphere is an example of an implicit function defining a surfac
 
 \noindent\textbf{\large Introduction to Planes in Space}\\
 
+\enlargethispage{2\baselineskip}
 The coordinate axes naturally define three planes (shown in Figure \ref{fig:coordplanes}), the \textbf{coordinate planes}: the $x$-$y$ plane, the $y$-$z$ plane and the $x$-$z$ plane. The $x$-$y$ plane is characterized as the set of all points in space where the $z$-value is 0. %(Likewise, the $x$-$z$ plane is all points where the $y$-value is 0.) 
 \index{planes!coordinate plane}\index{planes!introduction}
 This, in fact, gives us an equation that describes this plane: $z=0$. Likewise, the $x$-$z$ plane is all points where the $y$-value is 0, characterized by $y=0$.\\
@@ -198,7 +203,7 @@ Sketch the region defined by the inequalities $-1\leq y\leq 2$.}
 
 \noindent\textbf{\large Cylinders}\\
 
-The equation $x=1$ obviously lacks the $y$ and $z$ variables, meaning it defines points where the $y$ and $z$ coordinates can take on any value. Now consider the equation $x^2+y^2=1$ \emph{in space.} In \emph{the plane}, this equation describes a circle of radius 1, centered at the origin. In space, the $z$ coordinate is not specified, meaning it can take on any value. In Figure \ref{fig:spacecylinder1} (a), we show part of the graph of the equation $x^2+y^2=1$ by sketching 3 circles: the bottom one has a constant $z$-value of $-1.5$, the middle one has a $z$-value of 0 and the top circle has a $z$-value of 1. By plotting \emph{all} possible $z$-values, we get the  surface shown in Figure \ref{fig:spacecylinder1} (b). 
+The equation $x=1$ obviously lacks the $y$ and $z$ variables, meaning it defines points where the $y$ and $z$ coordinates can take on any value. Now consider the equation $x^2+y^2=1$ \emph{in space.} In \emph{the plane}, this equation describes a circle of radius 1, centered at the origin. In space, the $z$ coordinate is not specified, meaning it can take on any value. In Figure \ref{fig:spacecylinder1} (a), we show part of the graph of the equation $x^2+y^2=1$ by sketching 3 circles: the bottom one has a constant $z$-value of $-1.5$, the middle one has a $z$-value of 0 and the top circle has a $z$-value of 1. By plotting \emph{all} possible $z$-values, we get the  surface shown in Figure \ref{fig:spacecylinder1}(b). 
 This surface looks like a ``tube,'' or a ``cylinder''; mathematicians call this surface a \textbf{cylinder} for an entirely different reason.\\
 
 \mtable{.7}{Sketching $x^2+y^2=1$.}{fig:spacecylinder1}{%
@@ -231,7 +236,7 @@ In this text, we consider curves $C$ that lie in planes parallel to one of the c
 In the example preceding the definition, the curve $x^2+y^2=1$ in the $x$-$y$ plane is the directrix and the rulings are lines parallel to the $z$-axis. (Any circle shown in Figure \ref{fig:spacecylinder1} can be considered a directrix; we simply choose the one where $z=0$.) Sample rulings can also be viewed in part (b) of the figure. More examples will help us understand this definition.\\
 
 \example{ex_space4}{Graphing cylinders}{
-Graph the cylinder following cylinders. 
+Graph the following cylinders. 
 
 1.\quad $z=y^2$ \qquad 2.\quad $x=\sin z$ \hfill \par
 	%\begin{enumerate}
@@ -240,9 +245,9 @@ Graph the cylinder following cylinders.
 	%\end{enumerate}
 }
 {\begin{enumerate}
-	\item We can view the equation $z=y^2$ as a parabola in the $y$-$z$ plane, as illustrated in Figure \ref{fig:space4a} (a). As $x$ does not appear in the equation, the rulings are lines through this parabola parallel to the $x$-axis, shown in (b). These rulings give a general idea as to what the surface looks like, drawn in (c).
-	\enlargethispage{2\baselineskip}
-	\
+	\item We can view the equation $z=y^2$ as a parabola in the $y$-$z$ plane, as illustrated in Figure \ref{fig:space4a}(a). As $x$ does not appear in the equation, the rulings are lines through this parabola parallel to the $x$-axis, shown in (b). These rulings give an idea as to what the surface looks like, drawn in (c).
+	\enlargethispage{3\baselineskip}
+	%\
 	%\mtable{.7}{Sketching the cylinder defined by $z=y^2$ in Example \ref{ex_space4}.}{fig:space4a}{%
 	%\begin{tabular}{c}
 	%\myincludegraphics{figures/figspace4a}\\[-10pt]
@@ -282,6 +287,7 @@ Graph the cylinder following cylinders.
 \captionsetup{type=figure}
 \caption{Sketching the cylinder defined by $z=y^2$.}\label{fig:space4a}
 \end{center}
+\clearpage
 	
 	\item		We can view the equation $x=\sin z$ as a sine curve that exists in the $x$-$z$ plane, as shown in Figure \ref{fig:space4b} (a). The rules are parallel to the $y$ axis as the variable $y$ does not appear in the equation $x=\sin z$; some of these are shown in part (b). The surface is shown in part (c) of the figure. 
 	
@@ -327,7 +333,7 @@ One of the applications of integration we learned previously was to find the vol
 
 Consider the surface formed by revolving $y=\sqrt{x}$ about the $x$-axis. Cross--sections of this surface parallel to the $y$-$z$ plane are circles, as shown in Figure \ref{fig:surf_rev_intro}(a). Each circle has equation of the form $y^2+z^2=r^2$ for some radius $r$. The radius is a function of $x$; in fact, it is $r(x) = \sqrt{x}$. Thus the equation of the surface shown in Figure \ref{fig:surf_rev_intro}b is $y^2+z^2=(\sqrt{x})^2.$
 
-\mtable{.5}{Introducing surfaces of revolution.}{fig:surf_rev_intro}{%
+\mtable{.45}{Introducing surfaces of revolution.}{fig:surf_rev_intro}{%
 \begin{tabular}{c}
 \myincludegraphicsthree{width=125pt,3Dmenu,activate=onclick,deactivate=onclick,
 3Droll=0,
@@ -873,7 +879,7 @@ Sketch the quadric surface defined by the given equation.\\[5pt]
 	
 	$y=0$: 	The trace is $z=-x^2$, a parabola opening down in the $x-z$ plane. 
 	
-	Sketching these two parabolas gives a sketch like that in Figure \ref{fig:space5c} (a), and filling in the surface gives a sketch like (b).
+	Sketching these two parabolas gives a sketch like that in Figure \ref{fig:space5c}(a), and filling in the surface gives a sketch like (b).
 	
 	\mtable{.7}{Sketching a hyperbolic paraboloid.}{fig:space5c}{%
 	\begin{tabular}{c}
